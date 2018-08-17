@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using HappyImmigrant.Mobile.Pages;
 using Xamarin.Forms;
 
 namespace HappyImmigrant.Mobile
@@ -12,19 +8,7 @@ namespace HappyImmigrant.Mobile
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-                }
-            };
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
